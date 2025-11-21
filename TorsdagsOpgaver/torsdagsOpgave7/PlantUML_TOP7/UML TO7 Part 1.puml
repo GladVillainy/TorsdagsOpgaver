@@ -1,0 +1,61 @@
+@startuml
+!pragma layout smetana
+
+class Bon {
+- String medarbejder
+- int dato
+
+- Udskrivning()
+}
+
+class Main{
+ + static void main(String[] args)
+}
+
+class Vare {
+ - int id
+  - String navn
+  - int dag
+  - int måned
+  - int år
+  - double pris
+  - Boolean lavPris
+  - double mængdeIGram
+  - boolean løsvægt
+  - boolean økologisk
+  - boolean udsolgt
+
+  +Vare(id, navn, dag, måned, år, pris, lavPris, mængdeIGram, løsvægt, økologisk, udsolgt)
+
+}
+
+class FileIO {
+
+}
+
+class Robot {
+
+}
+
+class Lommeregner {
+- double pris
+- double tilbudsPris
+- double total
+- int moms
+
+- Udregning()
+}
+class VareBase{
+  - Collection<> normaleVare = new ArrayList<>();
+  - Collection<> tilbudsVare = new ArrayList<>();
+  - printList(Collection<>)
+  - Compare()
+
+  }
+
+
+
+
+
+
+@enduml
